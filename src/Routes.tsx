@@ -17,9 +17,7 @@ const Routes = () => (
     <Route exact path='/Work Experience' component={WorkExperience} />
     <Route exact path='/Leisure' component={Leisure} />
     <Route exact path='/Contact' component={Contact} />   
-       
     <Route path='/' component={NotFound} /> 
-   
   </Switch>
 )
 export default Routes
