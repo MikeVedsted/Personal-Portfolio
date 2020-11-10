@@ -184,11 +184,11 @@ export const projectsList = [
     buttons: [
       {
         name: 'Demo',
-        link: 'https://www.vedsted.fi/'
+        link: 'https://www.vedsted.fi'
       },
       {
         name: 'Repo',
-        link: 'https://github.com/MikeVedsted/portfolio'
+        link: 'https://github.com/MikeVedsted/Personal-Portfolio'
       },
     ],
   },
@@ -235,9 +235,9 @@ export const experience = [
     flag: 'https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg',
     description: '',
     tags: [
-      'Full-Stack,',
-      'Web Development,',
-      'MERN,',
+      'Full-Stack',
+      'Web Development',
+      'MERN',
       'PERN'
     ],
     responsibilities: [
@@ -257,9 +257,9 @@ export const experience = [
     flag: 'https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg',
     description: '',
     tags: [
-      'Transcription,',
-      'Data annotation,',
-      'AI/ML,',
+      'Transcription',
+      'Data annotation',
+      'AI/ML',
       'Project coordination'
     ],
     responsibilities: [
@@ -273,7 +273,7 @@ export const experience = [
     title: "self-study",
     description: '',
     tags: [
-      'Finnish,',
+      'Finnish',
       'Web development'
     ]
   },
@@ -286,10 +286,10 @@ export const experience = [
     flag: 'https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg',
     description: '',
     tags: [
-      'Customer experience,',
-      'Internal support,',
-      'Data handling,',
-      'Training,',
+      'Customer experience',
+      'Internal support',
+      'Data handling',
+      'Training',
       'Knowledge management',
     ],
     responsibilities: [
@@ -308,9 +308,9 @@ export const experience = [
     flag: 'https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg',
     description: '',
     tags: [
-      'Customer experience,',
-      'Advocacy,',
-      'Internal consultancy,',
+      'Customer experience',
+      'Advocacy',
+      'Internal consultancy',
       'Coordination'],
     responsibilities: [
       'Collected and analyzed data on customer experience.',
@@ -327,7 +327,7 @@ export const experience = [
     flag: 'https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg',
     description: '',
     tags: [
-      'Customer service,',
+      'Customer service',
       'Visual design',
     ],
     responsibilities: [
@@ -355,10 +355,10 @@ export const experience = [
     flag: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg',
     description: '',
     tags: [
-      'Consultancy,',
-      'Marketing,',
-      'Business development,',
-      'Project management,',
+      'Consultancy',
+      'Marketing',
+      'Business development',
+      'Project management',
       'Product development',
     ],
     responsibilities: [

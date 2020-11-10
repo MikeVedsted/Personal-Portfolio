@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Accordion from "react-bootstrap/Accordion";
+import Badge from "react-bootstrap/Badge";
 
 import { ExperienceProps } from "../../types";
 
@@ -46,7 +47,11 @@ function ExperienceBlock({ content }: ExperienceProps) {
           <div className="ExperienceInformation">
             <p>
               <strong>Keywords: </strong>
-              {tags.map((tag) => tag + " ")}
+              {tags.map((tag) => (
+                <>
+                  <Badge variant="light">{tag}</Badge>{" "}
+                </>
+              ))}
             </p>
             <p>{description}</p>
             {type === "Experience" ? (
