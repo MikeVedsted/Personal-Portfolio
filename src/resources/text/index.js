@@ -11,7 +11,8 @@ export const aboutMe = {
   title: 'about me',
   paragraphs: [
     "I'm Mike, a curious person turned full-stack developer.",
-    "I love learning and I'm passionate about customer experiences. These two parts of me have opened many doors, taken me down many different roads, and through three countries. Click around, build your own impression, and I'm sure we can learn a lot from each other."
+    "I'm passionate about learning and customer experiences - qualities that have lead me through several countries, down different roads, and ultimately brought me to Tampere, Finland.", 
+    "Click around, get to know me, and I'd love to hear from you if you think we could do something awesome together!"
   ]
 }
 
@@ -28,7 +29,7 @@ export const languages = {
     },
     {
       language: 'German',
-      level: 'Fluent'
+      level: 'Fluent' 
     },
     {
       language: 'Finnish',
@@ -301,7 +302,7 @@ export const experience = [
   },
   {
     type: "Experience",
-    period: "July 2017 - October 2017",
+    period: "July 2017 - October 2017", 
     title: "VOICE OF THE CUSTOMER",
     company: "Vistaprint",
     location: "Berlin, Germany",
@@ -435,7 +436,7 @@ export const hobbies = [
   },
   {
     title: 'Graphic Design',
-    description: "15 years of self-taught enjoyment",
+    description: "15 years of self-taught visual skills",
     image: 'https://res.cloudinary.com/dahevvjff/image/upload/v1604659135/portfolio/cm1h35xfd0ahnzpuasio.png'
   },
   {

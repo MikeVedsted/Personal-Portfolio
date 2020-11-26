@@ -19,17 +19,29 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QLW44SCR2N"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QLW44SCR2N");
+    </script>
     <title>Mike Vedsted's portfolio</title>
   </head>
   <body>
-    
     <form name="contact" netlify netlify-honeypot="bot-field" hidden>
       <input type="email" name="email" />
       <input type="text" name="name" />
       <input type="textarea" name="message" />
       <textarea name="message"></textarea>
     </form>
-    
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
