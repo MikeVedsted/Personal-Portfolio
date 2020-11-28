@@ -9,6 +9,7 @@ import App from "./App";
 import "./index.scss";
 
 ReactGA.initialize("G-QLW44SCR2N");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <React.StrictMode>
