@@ -11,7 +11,7 @@ export const aboutMe = {
   title: 'about me',
   paragraphs: [
     "I'm Mike, a curious person turned full-stack developer.",
-    "I'm passionate about learning and customer experiences - qualities that have lead me through several countries, down different roads, and ultimately brought me to Tampere, Finland.", 
+    "I'm passionate about learning and customer experiences - qualities that have lead me through several countries, down different roads, and ultimately brought me to Tampere, Finland.",
     "Click around, get to know me, and I'd love to hear from you if you think we could do something awesome together!"
   ]
 }
@@ -29,7 +29,7 @@ export const languages = {
     },
     {
       language: 'German',
-      level: 'Fluent' 
+      level: 'Fluent'
     },
     {
       language: 'Finnish',
@@ -133,6 +133,36 @@ export const education = {
 }
 
 export const projectsList = [
+  {
+    image: 'https://res.cloudinary.com/dahevvjff/image/upload/v1608280142/portfolio/javzo8ag6u4a28uqa9xt.png',
+    title: 'JoinMe',
+    stack: [
+      'ExpressJS,',
+      'Jest,',
+      'NodeJS,',
+      'PostgreSQL,',
+      'React,',
+      'Redux,',
+      'SCSS,',
+      'TypeScript',
+    ],
+    description: [
+      'Group project done at Integrify. Currently still a work in progress',
+      'A full stack social media project allowing users to create and find social sports events based on location and activity type.',
+      'For this project, I serve(d) as tech lead.',
+      'In addition, my tasks are/were especially focused on database management, google APIs and finding new and vetting technologies that were new to the participants of the group.'
+    ],
+    buttons: [
+      // {
+      //   name: 'Demo',
+      //   link: 'https://joinme-integrify.herokuapp.com/'
+      // },
+      {
+        name: 'Repo',
+        link: 'https://github.com/MikeVedsted/JoinMe'
+      }
+    ],
+  },
   {
     image: 'https://res.cloudinary.com/dahevvjff/image/upload/v1604995840/portfolio/zug4b6qu82k7ddrleuh0.png',
     title: 'Hatster',
@@ -302,7 +332,7 @@ export const experience = [
   },
   {
     type: "Experience",
-    period: "July 2017 - October 2017", 
+    period: "July 2017 - October 2017",
     title: "VOICE OF THE CUSTOMER",
     company: "Vistaprint",
     location: "Berlin, Germany",
