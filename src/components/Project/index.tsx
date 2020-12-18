@@ -15,7 +15,11 @@ function Project({ image, title, stack, description, buttons }: ProjectProps) {
           <Image src={image} fluid />
           <ButtonGroup className="Project__Buttons">
             {buttons.map((button) => (
-              <Button href={button.link} variant="outline-light">
+              <Button
+                target={"a_blank"}
+                href={button.link}
+                variant="outline-light"
+              >
                 {button.name.toUpperCase()}
               </Button>
             ))}
