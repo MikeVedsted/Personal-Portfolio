@@ -8,7 +8,7 @@ import Phone from "../../resources/icons/phone.svg";
 function Social() {
   return (
     <p>
-      <a href="https://github.com/MikeVedsted">
+      <a href="https://github.com/MikeVedsted" target="_blank">
         <img
           src={Github}
           aria-label="see my profile on Github"
@@ -16,7 +16,7 @@ function Social() {
           className="Icon"
         />
       </a>
-      <a href="https://www.linkedin.com/in/mikevedsted/">
+      <a href="https://www.linkedin.com/in/mikevedsted/" target="_blank">
         <img
           src={Linkedin}
           aria-label="see my profile on Linkedin"
