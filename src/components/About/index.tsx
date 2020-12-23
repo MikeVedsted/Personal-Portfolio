@@ -8,7 +8,7 @@ import Languages from "../Languages";
 import Education from "../Education";
 import Courses from "../Courses";
 
-function About() {
+const About = () => {
   return (
     <Container>
       <AboutMe />
@@ -23,6 +23,6 @@ function About() {
       </Row>
     </Container>
   );
-}
+};
 
 export default About;

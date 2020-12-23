@@ -7,7 +7,13 @@ import Button from "react-bootstrap/Button";
 
 import { ProjectProps } from "../../types";
 
-function Project({ image, title, stack, description, buttons }: ProjectProps) {
+const Project = ({
+  image,
+  title,
+  stack,
+  description,
+  buttons,
+}: ProjectProps) => {
   return (
     <section>
       <Row className="Project align-items-center">
@@ -28,20 +34,17 @@ function Project({ image, title, stack, description, buttons }: ProjectProps) {
         <Col>
           <h4>{title}</h4>
           <p>
-            <strong>Stack:</strong> {stack.map((tech) => tech + " ")}
+            <strong>Stack:</strong> {stack.join(", ")}
           </p>
-          <p>
-            {description.map((line) => (
-              <span>
-                {line}
-                <br />
-              </span>
+          <ul>
+            {description.map((paragraph) => (
+              <li>{paragraph}</li>
             ))}
-          </p>
+          </ul>
         </Col>
       </Row>
     </section>
   );
-}
+};
 
 export default Project;

@@ -11,14 +11,14 @@ export type StackGroupProps = {
 
 export type Button = {
   name: string;
-  link: string
-}
+  link: string;
+};
 export type ProjectProps = {
   image: string;
   title: string;
   stack: string[];
   description: string[];
-  buttons: Button[]
+  buttons: Button[];
 };
 
 export type ExperienceProps = {
@@ -33,6 +33,13 @@ export type ExperienceProps = {
     tags: string[];
     responsibilities?: string[];
   };
+};
+
+export type ExperienceDetailsProps = {
+  tags: string[];
+  description: string;
+  responsibilities?: string[];
+  type: string;
 };
 
 export type HobbyProps = {

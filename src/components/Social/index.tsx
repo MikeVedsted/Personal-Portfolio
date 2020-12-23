@@ -5,9 +5,10 @@ import Linkedin from "../../resources/icons/linkedin.svg";
 import Envelope from "../../resources/icons/envelope.svg";
 import Phone from "../../resources/icons/phone.svg";
 
-function Social() {
+const Social = () => {
   return (
-    <p>
+    <>
+      <p>Don't like filling out forms? You can also reach me here:</p>
       <a href="https://github.com/MikeVedsted" target="_blank">
         <img
           src={Github}
@@ -43,8 +44,8 @@ function Social() {
           )
         }
       />
-    </p>
+    </>
   );
-}
+};
 
 export default Social;

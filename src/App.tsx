@@ -8,14 +8,14 @@ import Routes from "./Routes";
 import Navigation from "./components/Navigation";
 import "./app.scss";
 
-function App() {
+const App = () => {
   const location = useLocation();
 
   return (
     <Container fluid className="App">
       <Row className="fullHeight align-items-center">
         <Navigation />
-        {location.pathname === "/" ? null : (
+        {location.pathname !== "/" && (
           <Col>
             <Routes />
           </Col>
@@ -23,6 +23,6 @@ function App() {
       </Row>
     </Container>
   );
-}
+};
 
 export default App;

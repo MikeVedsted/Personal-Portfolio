@@ -2,13 +2,15 @@ import React from "react";
 
 import { experienceIntro } from "../../resources/text";
 
-function ExperienceIntro() {
+const ExperienceIntro = () => {
+  const { title, text } = experienceIntro;
+
   return (
     <section>
-      <h2>{experienceIntro.title.toUpperCase()}</h2>
-      <p>{experienceIntro.text}</p>
+      <h2>{title.toUpperCase()}</h2>
+      <p>{text}</p>
     </section>
   );
-}
+};
 
 export default ExperienceIntro;

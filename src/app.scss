@@ -58,10 +58,6 @@ li {
   }
 }
 
-.StackItem {
-  display: block;
-}
-
 .Experience {
   @include BoxBorder;
   &__Company {
@@ -89,7 +85,7 @@ li {
 
 .Icon {
   width: 20px;
-  margin: 10px 20px 0 0;
+  margin-right: 20px;
   cursor: pointer;
 }
 
@@ -107,7 +103,7 @@ li {
   }
 }
 
-.hovereffect:hover .overlay {
+.hoverEffect:hover .overlay {
   opacity: 0.8;
   cursor: default;
 }
@@ -193,4 +189,8 @@ li {
   border-color: #818182 !important;
   color: #818182;
   background-color: $background-color !important;
+}
+
+.badge {
+  margin: auto 3px;
 }

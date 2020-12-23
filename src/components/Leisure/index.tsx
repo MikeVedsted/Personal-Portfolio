@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import Hobby from "../Hobby";
 import { hobbies } from "../../resources/text";
 
-function Leisure() {
+const Leisure = () => {
   return (
     <Container className="Scrollable">
       <Row noGutters xs={1} md={2} lg={1} xl={2}>
@@ -18,6 +18,6 @@ function Leisure() {
       </Row>
     </Container>
   );
-}
+};
 
 export default Leisure;

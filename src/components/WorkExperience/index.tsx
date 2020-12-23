@@ -5,7 +5,7 @@ import ExperienceIntro from "../ExperienceIntro";
 import ExperienceBlock from "../ExperienceBlock";
 import { experience } from "../../resources/text";
 
-function WorkExperience() {
+const WorkExperience = () => {
   return (
     <Container className="Scrollable text-center pt-3">
       <ExperienceIntro />
@@ -19,6 +19,6 @@ function WorkExperience() {
       </div>
     </Container>
   );
-}
+};
 
 export default WorkExperience;

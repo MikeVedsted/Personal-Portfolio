@@ -6,8 +6,9 @@ import Logo from "../Logo";
 import NavButton from "../NavButton";
 import { pageTitles } from "../../resources/text";
 
-function Navigation() {
+const Navigation = () => {
   const location = useLocation();
+  
   return (
     <>
       {location.pathname === "/" ? (
@@ -31,6 +32,6 @@ function Navigation() {
       )}
     </>
   );
-}
+};
 
 export default Navigation;

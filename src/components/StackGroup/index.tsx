@@ -3,21 +3,23 @@ import Card from "react-bootstrap/Card";
 
 import { StackGroupProps } from "../../types";
 
-function StackGroup({ group }: StackGroupProps) {
+const StackGroup = ({ group }: StackGroupProps) => {
+  const { name, technologies } = group;
+
   return (
     <section className="StackGroup">
       <Card bg="dark" className="StackGroup__Card">
-        <Card.Header as="h4">{group.name.toUpperCase()}</Card.Header>
+        <Card.Header as="h4">{name.toUpperCase()}</Card.Header>
         <Card.Body>
           <ul>
-            {group.technologies.map((item) => (
-              <li className="StackItem">{item}</li>
+            {technologies.map((item) => (
+              <li>{item}</li>
             ))}
           </ul>
         </Card.Body>
       </Card>
     </section>
   );
-}
+};
 
 export default StackGroup;

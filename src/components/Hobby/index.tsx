@@ -3,10 +3,11 @@ import Image from "react-bootstrap/Image";
 
 import { HobbyProps } from "../../types";
 
-function Hobby({ hobby }: HobbyProps) {
+const Hobby = ({ hobby }: HobbyProps) => {
   const { title, description, image } = hobby;
+
   return (
-    <div className="hovereffect">
+    <div className="hoverEffect">
       <Image src={image} fluid />
       <div className="overlay">
         <div className="overlay__text">
@@ -16,6 +17,6 @@ function Hobby({ hobby }: HobbyProps) {
       </div>
     </div>
   );
-}
+};
 
 export default Hobby;

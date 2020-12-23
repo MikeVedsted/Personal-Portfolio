@@ -2,20 +2,19 @@ import React from "react";
 
 import { aboutMe } from "../../resources/text/";
 
-function AboutMe() {
+const AboutMe = () => {
+  const { title, paragraphs } = aboutMe;
+  
   return (
     <section>
-      <h2>{aboutMe.title.toUpperCase()}</h2>
-      <p>
-        {aboutMe.paragraphs.map((paragraph, i) => (
-          <span key={i}>
-            {paragraph}
-            <br />
-          </span>
+      <h2>{title.toUpperCase()}</h2>
+      <ul>
+        {paragraphs.map((paragraph, i) => (
+          <li key={i}>{paragraph}</li>
         ))}
-      </p>
+      </ul>
     </section>
   );
-}
+};
 
 export default AboutMe;

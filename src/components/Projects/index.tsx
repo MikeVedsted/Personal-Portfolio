@@ -4,9 +4,9 @@ import Container from "react-bootstrap/esm/Container";
 import { projectsList } from "../../resources/text";
 import Project from "../Project";
 
-function Projects() {
+const Projects = () => {
   return (
-    <Container className='Scrollable pt-3'>
+    <Container className="Scrollable pt-3">
       {projectsList.map((project) => (
         <Project
           image={project.image}
@@ -19,6 +19,6 @@ function Projects() {
       ))}
     </Container>
   );
-}
+};
 
 export default Projects;

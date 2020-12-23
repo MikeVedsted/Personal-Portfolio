@@ -2,7 +2,7 @@ import React from "react";
 
 import { courseList } from "../../resources/text/";
 
-function Courses() {
+const Courses = () => {
   return (
     <section>
       <h2>{courseList.title.toUpperCase()}</h2>
@@ -13,12 +13,12 @@ function Courses() {
             <span className="separator">/</span>
             {course.title}
             <span className="separator">/</span>
-            {course.intructor}
+            {course.instructor}
           </li>
         ))}
       </ul>
     </section>
   );
-}
+};
 
 export default Courses;

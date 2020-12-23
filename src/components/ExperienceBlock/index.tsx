@@ -1,11 +1,9 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Accordion from "react-bootstrap/Accordion";
-import Badge from "react-bootstrap/Badge";
 
+import ExperienceBlockDetails from "../ExperienceBlockDetails";
 import { ExperienceProps } from "../../types";
 
-function ExperienceBlock({ content }: ExperienceProps) {
+const ExperienceBlock = ({ content }: ExperienceProps) => {
   const {
     title,
     period,
@@ -22,7 +20,7 @@ function ExperienceBlock({ content }: ExperienceProps) {
     <section className={type}>
       <h3>{title.toUpperCase()}</h3>
       <p>{period}</p>
-      {type !== "Self-study" ? (
+      {type === "Experience" && (
         <p>
           <span className="Experience__Company">{company}</span>
           <br />
@@ -33,42 +31,15 @@ function ExperienceBlock({ content }: ExperienceProps) {
             alt={`flag of ${location}`}
           />
         </p>
-      ) : null}
-
-      <Accordion>
-        <Accordion.Toggle
-          as={Container}
-          eventKey="0"
-          className="SlideContainer"
-        >
-          <span className="SlideContainer__slide">More information</span>
-        </Accordion.Toggle>
-        <Accordion.Collapse eventKey="0">
-          <div className="ExperienceInformation">
-            <p>
-              <strong>Keywords: </strong>
-              {tags.map((tag) => (
-                <>
-                  <Badge variant="light">{tag}</Badge>{" "}
-                </>
-              ))}
-            </p>
-            <p>{description}</p>
-            {type === "Experience" ? (
-              <>
-                <h5>Sample responsibilities</h5>
-                <ul>
-                  {responsibilities?.map((responsibility, i) => (
-                    <li key={i}>{responsibility}</li>
-                  ))}
-                </ul>
-              </>
-            ) : null}
-          </div>
-        </Accordion.Collapse>
-      </Accordion>
+      )}
+      <ExperienceBlockDetails
+        tags={tags}
+        description={description}
+        responsibilities={responsibilities}
+        type={type}
+      />
     </section>
   );
-}
+};
 
 export default ExperienceBlock;

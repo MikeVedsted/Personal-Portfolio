@@ -2,22 +2,22 @@ import React from "react";
 
 import { education } from "../../resources/text/";
 
-function Education() {
+const Education = () => {
+  const { title, institution, text } = education;
+
   return (
     <section>
-      <h2>{education.title.toUpperCase()}</h2>
-      <p>
-        <strong>{education.institution}</strong>
-      </p>
-      <p>
-        {education.text.map((paragraph, i) => (
-          <span key={i}>
-            {paragraph} <br />
-          </span>
+      <h2>{title.toUpperCase()}</h2>
+      <ul>
+        <li>
+          <strong>{institution}</strong>
+        </li>
+        {text.map((paragraph, i) => (
+          <li key={i}>{paragraph}</li>
         ))}
-      </p>
+      </ul>
     </section>
   );
-}
+};
 
 export default Education;

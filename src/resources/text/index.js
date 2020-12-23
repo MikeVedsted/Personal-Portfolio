@@ -44,22 +44,22 @@ export const courseList = {
     {
       end: 'July 2020',
       title: 'The Complete Web Developer in 2020',
-      intructor: 'Andrei Neagoie (Udemy)'
+      instructor: 'Andrei Neagoie (Udemy)'
     },
     {
       end: 'August 2019',
       title: 'Elements of AI',
-      intructor: 'University of Helsinki'
+      instructor: 'University of Helsinki'
     },
     {
       end: 'September 2019',
       title: 'The Web Developer Bootcamp',
-      intructor: 'Colt Steele (Udemy)'
+      instructor: 'Colt Steele (Udemy)'
     },
     {
       end: 'September 2018',
       title: 'Object-Oriented programming with Java, part I',
-      intructor: 'University of Helsinki'
+      instructor: 'University of Helsinki'
     },
   ]
 }
@@ -137,13 +137,13 @@ export const projectsList = [
     image: 'https://res.cloudinary.com/dahevvjff/image/upload/v1608280142/portfolio/javzo8ag6u4a28uqa9xt.png',
     title: 'JoinMe',
     stack: [
-      'ExpressJS,',
-      'Jest,',
-      'NodeJS,',
-      'PostgreSQL,',
-      'React,',
-      'Redux,',
-      'SCSS,',
+      'ExpressJS',
+      'Jest',
+      'NodeJS',
+      'PostgreSQL',
+      'React',
+      'Redux',
+      'SCSS',
       'TypeScript',
     ],
     description: [
@@ -167,17 +167,17 @@ export const projectsList = [
     image: 'https://res.cloudinary.com/dahevvjff/image/upload/v1604995840/portfolio/zug4b6qu82k7ddrleuh0.png',
     title: 'Hatster',
     stack: [
-      'ExpressJS,',
-      'Jest,',
-      'JWT,',
-      'Mailgun,',
-      'MongoDB,',
-      'Mongoose,',
-      'NodeJS,',
-      'React-Bootstrap,',
-      'React,',
-      'Redux,',
-      'SCSS,',
+      'ExpressJS',
+      'Jest',
+      'JWT',
+      'Mailgun',
+      'MongoDB',
+      'Mongoose',
+      'NodeJS',
+      'React-Bootstrap',
+      'React',
+      'Redux',
+      'SCSS',
       'TypeScript',
     ],
     description: [
@@ -203,9 +203,9 @@ export const projectsList = [
     image: 'https://res.cloudinary.com/dahevvjff/image/upload/v1604997776/portfolio/teejnthaggituapilkkr.png',
     title: "Mike Vedsted's Portfolio",
     stack: [
-      'Netlify Forms,',
-      'React-Bootstrap,',
-      'React,',
+      'Netlify Forms',
+      'React-Bootstrap',
+      'React',
       'SCSS'
     ],
     description: [
@@ -227,11 +227,11 @@ export const projectsList = [
     image: 'https://res.cloudinary.com/dahevvjff/image/upload/v1604995838/portfolio/kpe6pia4nicxtmd0ednk.png',
     title: 'Countries App',
     stack: [
-      'React Context API,',
-      'React,',
-      'Redux-Saga,',
-      'Redux-Thunk,',
-      'Redux,',
+      'React Context API',
+      'React',
+      'Redux-Saga',
+      'Redux-Thunk',
+      'Redux',
       'SCSS',
     ],
     description: [

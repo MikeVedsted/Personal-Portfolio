@@ -2,7 +2,7 @@ import React from "react";
 
 import { languages } from "../../resources/text";
 
-function Languages() {
+const Languages = () => {
   return (
     <section>
       <h2>{languages.title.toUpperCase()}</h2>
@@ -17,6 +17,6 @@ function Languages() {
       </ul>
     </section>
   );
-}
+};
 
 export default Languages;

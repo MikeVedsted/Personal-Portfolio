@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import ContactForm from "../ContactForm";
 import Social from "../Social";
 
-function Contact() {
+const Contact = () => {
   return (
     <Container>
       <Col lg={{ span: 8, offset: 2 }}>
@@ -16,12 +16,10 @@ function Contact() {
           Fill out the form below and I'll get in touch ASAP!
         </p>
         <ContactForm />
-        <p>
-          Don't like filling out forms? You can also reach me here:
-          <Social />
-        </p>
+        <Social />
       </Col>
     </Container>
   );
-}
+};
+
 export default Contact;

@@ -5,16 +5,16 @@ import Row from "react-bootstrap/Row";
 import StackGroup from "../StackGroup";
 import { stack } from "../../resources/text";
 
-function Stack() {
+const Stack = () => {
   return (
-    <Container className='Scrollable pt-5'>
-      <Row xs={1} sm={2} >
+    <Container className="Scrollable pt-5">
+      <Row xs={1} sm={2}>
         {stack.map((group) => (
-          <StackGroup group={group} key={group.name}/>
+          <StackGroup group={group} key={group.name} />
         ))}
       </Row>
     </Container>
   );
-}
+};
 
 export default Stack;
