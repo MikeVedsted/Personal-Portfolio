@@ -6,13 +6,15 @@ function Languages() {
   return (
     <section>
       <h2>{languages.title.toUpperCase()}</h2>
-      {languages.languages.map((language) => (
-        <ul key={language.language}>
-          <li>{language.language}</li>
-          <li className="separator">/</li>
-          <li>{language.level}</li>
-        </ul>
-      ))}
+      <ul>
+        {languages.languages.map((language) => (
+          <li>
+            {language.language}
+            <span className="separator">/</span>
+            {language.level}
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }

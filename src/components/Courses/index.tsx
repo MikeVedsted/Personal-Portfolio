@@ -6,15 +6,17 @@ function Courses() {
   return (
     <section>
       <h2>{courseList.title.toUpperCase()}</h2>
-      {courseList.courses.map((course) => (
-        <ul key={course.end}>
-          <li>{course.end}</li>
-          <li className="separator">/</li>
-          <li>{course.title}</li>
-          <li className="separator">/</li>
-          <li>{course.intructor}</li>
-        </ul>
-      ))}
+      <ul>
+        {courseList.courses.map((course) => (
+          <li>
+            {course.end}
+            <span className="separator">/</span>
+            {course.title}
+            <span className="separator">/</span>
+            {course.intructor}
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
