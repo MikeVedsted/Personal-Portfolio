@@ -1,5 +1,6 @@
 export type NavButtonProps = {
   buttonText: string;
+  onClick?: () => void;
 };
 
 export type StackGroupProps = {
@@ -13,6 +14,7 @@ export type Button = {
   name: string;
   link: string;
 };
+
 export type ProjectProps = {
   image: string;
   title: string;

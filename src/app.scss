@@ -42,9 +42,27 @@ li {
   color: $highlight-color;
 }
 
-.Navigation,
-.Footer {
+.Navigation {
   text-align: center;
+  &--mobile {
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $background-color;
+    background: linear-gradient(
+      180deg,
+      #1d252de6 0%,
+      #1d252de6 90%,
+      #1d252d00 100%
+    );
+  }
+  &__icon {
+    font-size: 2em;
+    position: relative;
+    top: -10px;
+  }
 }
 
 .StackGroup {

@@ -4,10 +4,10 @@ import Button from "react-bootstrap/Button";
 
 import { NavButtonProps } from "../../types";
 
-const NavButton = ({ buttonText }: NavButtonProps) => {
+const NavButton = ({ buttonText, ...rest }: NavButtonProps) => {
   return (
     <LinkContainer to={`/${buttonText}`}>
-      <Button variant="outline-light" className="NavButton">
+      <Button variant="outline-light" className="NavButton" {...rest}>
         {buttonText}
       </Button>
     </LinkContainer>
