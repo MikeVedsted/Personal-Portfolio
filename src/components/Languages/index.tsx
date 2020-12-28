@@ -10,7 +10,7 @@ const Languages = () => {
         {languages.languages.map((language) => (
           <li>
             {language.language}
-            <span className="separator">/</span>
+            <span className="Separator">/</span>
             {language.level}
           </li>
         ))}

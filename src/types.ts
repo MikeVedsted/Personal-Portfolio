@@ -25,11 +25,11 @@ export type ProjectProps = {
 
 export type ExperienceProps = {
   content: {
-    type: string;
-    period: string;
     title: string;
+    period: string;
     company?: string;
     location?: string;
+    type: string;
     flag?: string;
     description: string;
     tags: string[];

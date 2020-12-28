@@ -10,9 +10,9 @@ const Courses = () => {
         {courseList.courses.map((course) => (
           <li>
             {course.end}
-            <span className="separator">/</span>
+            <span className="Separator">/</span>
             {course.title}
-            <span className="separator">/</span>
+            <span className="Separator">/</span>
             {course.instructor}
           </li>
         ))}
