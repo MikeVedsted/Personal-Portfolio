@@ -134,6 +134,29 @@ export const education = {
 
 export const projectsList = [
   {
+    image: 'https://res.cloudinary.com/dahevvjff/image/upload/v1612271055/portfolio/nrdxqo1qhl07riafifoj.png',
+    title: 'Hangry Coona',
+    stack: [
+      'React',
+      'SCSS'
+    ],
+    description: [
+      'A quick and dirty dinner inspiration app',
+      'Brief: should only consider screen size 320x568 (iPhone 5). Should have two functions, one to display a random dish, and one to filter and horizontally scroll through all stored dishes',
+      'Solution by far works best on mobile devices and there is currently no plan to expand the sizes.'
+    ],
+    buttons: [
+      {
+        name: 'Demo',
+        link: 'https://hangry-coona.netlify.app/'
+      },
+      {
+        name: 'Repo',
+        link: 'https://github.com/MikeVedsted/hangry-coona'
+      }
+    ],
+  },
+  {
     image: 'https://res.cloudinary.com/dahevvjff/image/upload/v1608280142/portfolio/javzo8ag6u4a28uqa9xt.png',
     title: 'JoinMe',
     stack: [
