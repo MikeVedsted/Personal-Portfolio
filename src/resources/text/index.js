@@ -176,10 +176,10 @@ export const projectsList = [
       'In addition, my tasks are/were especially focused on database management, google APIs and finding new and vetting technologies that were new to the participants of the group.'
     ],
     buttons: [
-      // {
-      //   name: 'Demo',
-      //   link: 'https://joinme-integrify.herokuapp.com/'
-      // },
+      {
+        name: 'Demo',
+        link: 'https://joinme-integrify.herokuapp.com/'
+      },
       {
         name: 'Repo',
         link: 'https://github.com/MikeVedsted/JoinMe'
