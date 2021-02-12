@@ -99,7 +99,8 @@ export const stack = [
   {
     name: 'Testing',
     technologies: [
-      'Jest'
+      'Jest',
+      'Cypress'
     ],
   },
   {
