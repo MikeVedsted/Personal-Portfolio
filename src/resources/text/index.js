@@ -42,6 +42,11 @@ export const courseList = {
   title: 'courses',
   courses: [
     {
+      end: 'March 2021',
+      title: 'Full Stack Open 2020',
+      instructor: 'University of Helsinki'
+    },
+    {
       end: 'July 2020',
       title: 'The Complete Web Developer in 2020',
       instructor: 'Andrei Neagoie (Udemy)'
@@ -84,6 +89,7 @@ export const stack = [
     name: 'Back end',
     technologies: [
       'ExpressJS',
+      'GraphQL',
       'NodeJS',
       'REST API',
       'TypeScript'
@@ -92,8 +98,15 @@ export const stack = [
   {
     name: 'Databases',
     technologies: [
-      'MongoDB',
+      'MongoDB', 
+      'Mongoose',
       'PostgreSQL'
+    ],
+  },
+  {
+    name: 'Mobile development',
+    technologies: [
+      'React-native'
     ],
   },
   {
@@ -106,20 +119,28 @@ export const stack = [
   {
     name: 'DevOps',
     technologies: [
+      'Bash',
       'Docker',
-      'Github Actions'
+      'Heroku',
+      'Github Actions',
+      'Netlify'
     ],
   },
   {
-    name: 'Other skills',
+    name: 'Marketing',
+    technologies: [
+      'Google Adwords',
+      'Google Analytics',
+      'SEO'
+    ],
+  },
+  {
+    name: 'Design',
     technologies: [
       'Adobe Illustrator',
       'Adobe Photoshop',
       'Gimp',
-      'Google Adwords',
-      'Google Analytics',
       'Inkscape',
-      'SEO'
     ],
   },
 ]
