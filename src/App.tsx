@@ -4,12 +4,22 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import Routes from "./Routes";
+import { BlogRoutes, PortfolioRoutes } from "./Routes";
 import Navigation from "./components/Navigation";
 import "./app.scss";
 
 const App = () => {
   const location = useLocation();
+
+  if (window.location.host.split(".")[0].toLowerCase() === "blog") {
+    return (
+      <Container fluid className="App">
+        <Row className="fullHeight align-items-center">
+          <BlogRoutes />
+        </Row>
+      </Container>
+    );
+  }
 
   return (
     <Container fluid className="App">
@@ -17,7 +27,7 @@ const App = () => {
         <Navigation />
         {location.pathname !== "/" && (
           <Col>
-            <Routes />
+            <PortfolioRoutes />
           </Col>
         )}
       </Row>
