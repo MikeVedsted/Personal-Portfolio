@@ -10,14 +10,13 @@ import "./app.scss";
 
 const App = () => {
   const location = useLocation();
+  console.log(location);
 
   if (window.location.host.split(".")[0].toLowerCase() === "blog") {
     return (
-      <Container fluid className="App">
-        <Row className="fullHeight align-items-center">
-          <BlogRoutes />
-        </Row>
-      </Container>
+      <div className="App">
+        <BlogRoutes />
+      </div>
     );
   }
 
