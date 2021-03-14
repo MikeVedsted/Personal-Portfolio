@@ -4,16 +4,12 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import { BlogRoutes, PortfolioRoutes } from "../Routes";
-import Navigation from "./components/Navigation";
+import { BlogRoutes, PortfolioRoutes } from "./Portfolio/Routes";
+import Navigation from "./Portfolio/components/Navigation";
+import BlogNavigation from "./Portfolio/components/Navigation";
 import "./app.scss";
 
-const App = () => {
-  const location = useLocation();
-  if (window.location.host.split(".")[0].toLowerCase() === "blog") {
-    return <BlogRoutes />;
-  }
-
+const Portfolio = () => {
   return (
     <Container fluid className="App">
       <Row className="fullHeight align-items-center">
@@ -28,4 +24,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Portfolio;
