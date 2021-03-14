@@ -9,7 +9,7 @@ import Leisure from "./components/Leisure";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
 
-export const PortfolioRoutes = () => (
+const Routes = () => (
   <Switch>
     <Route exact path="/About" component={About} />
     <Route exact path="/Stack" component={Stack} />
@@ -20,3 +20,5 @@ export const PortfolioRoutes = () => (
     <Route path="/" component={NotFound} />
   </Switch>
 );
+
+export default Routes;
