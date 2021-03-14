@@ -13,7 +13,7 @@ const StackGroup = ({ group }: StackGroupProps) => {
         <Card.Body>
           <ul>
             {technologies.map((item) => (
-              <li>{item}</li>
+              <li key={item}>{item}</li>
             ))}
           </ul>
         </Card.Body>

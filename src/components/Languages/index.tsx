@@ -8,7 +8,7 @@ const Languages = () => {
       <h2>{languages.title.toUpperCase()}</h2>
       <ul>
         {languages.languages.map((language) => (
-          <li>
+          <li key={language.language}>
             {language.language}
             <span className="Separator">/</span>
             {language.level}

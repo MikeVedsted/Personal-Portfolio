@@ -22,6 +22,7 @@ const Project = ({
           <ButtonGroup className="Project__Buttons">
             {buttons.map((button) => (
               <Button
+                key={button.name}
                 target={"a_blank"}
                 href={button.link}
                 variant="outline-light"
@@ -38,7 +39,7 @@ const Project = ({
           </p>
           <ul>
             {description.map((paragraph) => (
-              <li>{paragraph}</li>
+              <li key={paragraph.substring(0, 5)}>{paragraph}</li>
             ))}
           </ul>
         </Col>

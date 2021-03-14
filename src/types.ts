@@ -6,7 +6,7 @@ export type NavButtonProps = {
 export type StackGroupProps = {
   group: {
     name: string;
-    technologies: String[];
+    technologies: string[];
   };
 };
 

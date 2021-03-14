@@ -8,7 +8,7 @@ const Courses = () => {
       <h2>{courseList.title.toUpperCase()}</h2>
       <ul>
         {courseList.courses.map((course) => (
-          <li>
+          <li key={course.title}>
             {course.end}
             <span className="Separator">/</span>
             {course.title}
