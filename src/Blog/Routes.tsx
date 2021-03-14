@@ -2,7 +2,7 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import { Switch, Route } from "react-router-dom";
 
-import Blog from ".";
+import Frontpage from "./components/Frontpage";
 import NotFound from "../Portfolio/components/NotFound";
 
 const Placeholder = () => {
@@ -35,7 +35,7 @@ const Placeholder = () => {
 
 const Routes = () => (
   <Switch>
-    <Route exact path="/work" component={Blog} />
+    <Route exact path="/work" component={Frontpage} />
     <Route exact path="/" component={Placeholder} />
     <Route path="/" component={NotFound} />
   </Switch>
