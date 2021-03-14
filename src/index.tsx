@@ -5,7 +5,7 @@ import ReactGA from "react-ga";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import App from "./App";
+import App from "./Portfolio/App";
 import "./index.scss";
 
 ReactGA.initialize("G-QLW44SCR2N");

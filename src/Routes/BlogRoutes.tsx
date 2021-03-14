@@ -2,7 +2,7 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import { Switch, Route } from "react-router-dom";
 
-import NotFound from "../components/NotFound";
+import NotFound from "../Portfolio/components/NotFound";
 
 
 const Placeholder = () => {

@@ -1,13 +1,13 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-import About from "../components/About";
-import Stack from "../components/Stack";
-import Projects from "../components/Projects";
-import WorkExperience from "../components/WorkExperience";
-import Leisure from "../components/Leisure";
-import Contact from "../components/Contact";
-import NotFound from "../components/NotFound";
+import About from "../Portfolio/components/About";
+import Stack from "../Portfolio/components/Stack";
+import Projects from "../Portfolio/components/Projects";
+import WorkExperience from "../Portfolio/components/WorkExperience";
+import Leisure from "../Portfolio/components/Leisure";
+import Contact from "../Portfolio/components/Contact";
+import NotFound from "../Portfolio/components/NotFound";
 
 export const PortfolioRoutes = () => (
   <Switch>
