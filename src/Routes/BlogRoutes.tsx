@@ -1,16 +1,23 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 import { Switch, Route } from "react-router-dom";
 
 import NotFound from "../components/NotFound";
 
 
 const Placeholder = () => {
+  const goToPortofolio = () => {
+    window.location.host = window.location.host.substring(5)
+  }
+  
   return (
     <div
       className="App"
       style={{
         display: "flex",
+        padding: "80px",
         justifyContent: "center",
+        textAlign: "center",
         alignItems: "center",
         flexDirection: "column",
       }}
@@ -18,13 +25,14 @@ const Placeholder = () => {
       <h1>Welcome to my blog</h1>
       <p>I'm currently working on this part of of the site, so hang tight.</p>
       <p>
-        Meanwhile, I'm looking for a job in web development, so why don't you
-        check out my portfolio?
+        <strong>While I've got you attention,</strong>
       </p>
       <p>
-        Have something you think I should write about? Let me know through the
-        contact form!
+        I'm looking for a job in web development, so why don't you check out my
+        portfolio?
+        While you are there, you can also let me know if you have a subject in mind, you would like me to write about.
       </p>
+      <Button onClick={goToPortofolio} variant="outline-light" className="NavButton">Portfolio</Button>
     </div>
   );
 };

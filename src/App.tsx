@@ -10,8 +10,6 @@ import "./app.scss";
 
 const App = () => {
   const location = useLocation();
-  console.log(location);
-
   if (window.location.host.split(".")[0].toLowerCase() === "blog") {
     return (
       <div className="App">
