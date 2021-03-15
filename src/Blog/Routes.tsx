@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 
 import Frontpage from "./components/Frontpage";
 import NotFound from "../Portfolio/components/NotFound";
+import { Page } from "./styles";
 
 const Placeholder = () => {
   const goToPortofolio = () => {
@@ -11,7 +12,7 @@ const Placeholder = () => {
   };
 
   return (
-    <div>
+    <Page>
       <h1>Welcome to my blog</h1>
       <p>I'm currently working on this part of of the site, so hang tight.</p>
       <p>
@@ -29,7 +30,7 @@ const Placeholder = () => {
       >
         Portfolio
       </Button>
-    </div>
+    </Page>
   );
 };
 
